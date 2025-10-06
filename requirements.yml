@@ -1,5 +1,4 @@
 ---
 roles:
   - name: geerlingguy.docker
-  - name: xiple.dotfiles
-    src: https://github.com/xiple/ansible-role-dotfiles
+  - name: geerlingguy.dotfiles

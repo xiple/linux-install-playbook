@@ -12,7 +12,7 @@
       tags: ['always']
 
   roles:
-    - role: xiple.dotfiles
+    - role: geerlingguy.dotfiles
       become: false
       tags: ['dotfiles']
     - role: geerlingguy.docker
