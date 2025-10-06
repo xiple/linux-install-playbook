@@ -1,0 +1,31 @@
+---
+linux_user: vagrant
+docker_users: "{{ linux_user }}"
+
+desktop_packages:
+  - curl
+  - vim-enhanced
+  - geany
+  - exif
+  - keepassxc
+  - lynx
+  - qpdf
+  - wol
+  - crontabs
+  - rsync
+  - sysstat
+
+
+desktop_packages_state: present
+
+kvm_packages:
+  - qemu-system
+  - libvirt-clients
+  - libvirt-daemon-system
+
+kvm_packages_state: present
+
+vagrant_packages:
+  - vagrant
+
+vagrant_packages_state: present

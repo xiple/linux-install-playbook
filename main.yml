@@ -1,0 +1,23 @@
+---
+- name: Configure linux desktop host.
+  hosts: all
+  become: true
+  vars_files:
+    - vars.yml
+
+  pre_tasks:
+    - name: Update package cache.
+      ansible.builtin.package:
+        update_cache: yes
+      tags: ['always']
+
+  roles:
+    - role: xiple.dotfiles
+      become: false
+      tags: ['dotfiles']
+    - role: geerlingguy.docker
+      tags: ['docker']
+
+  tasks:
+    - import_tasks: tasks/main.yml
+      tags: ['main']
