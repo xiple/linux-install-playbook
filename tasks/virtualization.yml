@@ -1,0 +1,20 @@
+---
+- name: Install packages in virtualization group.
+  ansible.builtin.dnf:
+    name: "@virtualization"
+    state: "present"
+
+- name: Enable service libvirtd service.
+  ansible.builtin.systemd_service:
+    name: libvirtd
+    enabled: true
+
+- name: Make sure libvirtd service is started.
+  ansible.builtin.systemd_service:
+    state: started
+    name: libvirtd
+
+- name: Install vagrant.
+  ansible.builtin.dnf:
+    name: "{{ vagrant_packages }}"
+    state: "{{ vagrant_packages_state }}"
