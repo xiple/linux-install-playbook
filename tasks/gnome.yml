@@ -1,0 +1,41 @@
+---
+- name: Gnome - Enable touchpad tap-to-click.
+  community.general.dconf:
+    key: "/org/gnome/desktop/peripherals/touchpad/tap-to-click"
+    value: "true"
+    state: present
+
+- name: Gnome - Show hidden files.
+  community.general.dconf:
+    key: "/org/gtk/Settings/FileChooser/show-hidden"
+    value: "true"
+    state: present
+
+- name: Gnome - Update sleep-inactive-ac-timeout to 7200.
+  community.general.dconf:
+    key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-timeout"
+    value: "7200"
+    state: present
+
+- name: Gnome - Add keybindings to switch windows.
+  community.general.dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-windows"
+    value: "['<Alt>Tab']"
+    state: present
+
+- name: Gnome - Add keybindings to switch windows backward.
+  community.general.dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
+    value: "['<Shift><Alt>Tab']"
+    state: present
+
+- name: Gnome - Add keybindings to switch applications.
+  community.general.dconf:
+    key: /org/gnome/desktop/wm/keybindings/switch-applications"
+    value: "[]"
+ 
+- name: Gnome - Add keybindings to switch applications backward
+  community.general.dconf:
+    key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
+    value: "[]"
+    state: present

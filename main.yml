@@ -22,5 +22,7 @@
   tasks:
     - import_tasks: tasks/main.yml
       tags: ['main']
+    - import_tasks: tasks/gnome.yml
+      tags: ['gnome']
     - import_tasks: tasks/virtualization.yml
       tags: ['virt']
