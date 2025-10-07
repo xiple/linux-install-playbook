@@ -32,6 +32,8 @@ vagrant_packages_state: present
 
 dconf_requirements_packages:
   - python3-psutil
+#  - dbus-tools
+#  - dbus-daemon
 
 dconf_requirements_packages_state: present
 
