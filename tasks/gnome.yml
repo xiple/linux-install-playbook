@@ -7,7 +7,7 @@
 
 - name: Gnome - Show hidden files.
   community.general.dconf:
-    key: "/org/gtk/Settings/FileChooser/show-hidden"
+    key: "/org/gtk/settings/file-chooser/show-hidden"
     value: "true"
     state: present
 
@@ -28,4 +28,3 @@
     key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
     value: "['<Shift><Alt>Tab']"
     state: present
-
