@@ -30,6 +30,11 @@ vagrant_packages:
 
 vagrant_packages_state: present
 
+dconf_requirements_packages:
+  - python3-psutil
+
+dconf_requirements_packages_state: present
+
 dotfiles_repo: "https://github.com/xiple/dotfiles"
 dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true

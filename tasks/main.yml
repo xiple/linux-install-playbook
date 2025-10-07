@@ -4,3 +4,8 @@
     name: "{{ desktop_packages }}"
     state: "{{ desktop_packages_state }}"
   ignore_errors: "{{ ansible_check_mode }}"
+
+- name: Install requirements for ansible dconf module.
+  ansible.builtin.package:
+    name: "{{ dconf_requirements_packages }}"
+    state: "{{ dconf_requirements_packages_state }}"

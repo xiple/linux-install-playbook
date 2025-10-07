@@ -4,15 +4,14 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "generic/fedora28"
-  config.vm.box_version = "4.3.12"
+  config.vm.box = "fedora42"
 
   # to speed up VM creation disable sync folder
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
-  config.vm.provider :virtualbox do |v|
-    v.memory = 512
-  end
+  #config.vm.provider :virtualbox do |v|
+    #v.memory = 512
+  #end
 
   # to speed up VM creation, keep insecure ssh key
   config.ssh.insert_key = false
@@ -20,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Ansible provisioner.
   config.vm.provision :ansible do |ansible|
     ansible.playbook = "main.yml"
-    ansible.skip_tags = ['docker']
+#    ansible.skip_tags = ['docker']
 #    ansible.tags = ['always', 'docker', 'jellyfin']
 #    ansible.tags = ['always', 'dotfiles']
   end

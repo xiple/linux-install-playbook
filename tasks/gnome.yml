@@ -29,13 +29,3 @@
     value: "['<Shift><Alt>Tab']"
     state: present
 
-- name: Gnome - Add keybindings to switch applications.
-  community.general.dconf:
-    key: /org/gnome/desktop/wm/keybindings/switch-applications"
-    value: "[]"
- 
-- name: Gnome - Add keybindings to switch applications backward
-  community.general.dconf:
-    key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
-    value: "[]"
-    state: present
