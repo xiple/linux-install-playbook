@@ -14,7 +14,7 @@ desktop_packages:
   - crontabs
   - rsync
   - sysstat
-
+  - fastfetch
 
 desktop_packages_state: present
 
