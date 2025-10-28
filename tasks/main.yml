@@ -5,6 +5,11 @@
     state: "{{ desktop_packages_state }}"
   ignore_errors: "{{ ansible_check_mode }}"
 
+- name: Install Dropbox (from RPM Fusion non free repo).
+  ansible.builtin.package:
+    name: "{{ dropbox_packages }}"
+    state: "{{ dropbox_packages_state }}"
+
 - name: Install requirements for ansible dconf module.
   ansible.builtin.package:
     name: "{{ dconf_requirements_packages }}"
