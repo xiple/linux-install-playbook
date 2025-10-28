@@ -15,6 +15,7 @@ desktop_packages:
   - rsync
   - sysstat
   - fastfetch
+  - vlc
 
 desktop_packages_state: present
 
