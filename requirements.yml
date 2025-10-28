@@ -2,3 +2,5 @@
 roles:
   - name: geerlingguy.docker
   - name: geerlingguy.dotfiles
+  - name: xiple.rpmfusion
+    src: https://github.com/xiple/ansible-role-rpmfusion

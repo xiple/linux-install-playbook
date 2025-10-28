@@ -12,6 +12,8 @@
       tags: ['always']
 
   roles:
+    - role: xiple.rpmfusion
+      tags: ['rpmfusion']
     - role: geerlingguy.dotfiles
       become: false
       tags: ['dotfiles']
