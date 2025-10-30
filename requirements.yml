@@ -4,3 +4,7 @@ roles:
   - name: geerlingguy.dotfiles
   - name: xiple.rpmfusion
     src: https://github.com/xiple/ansible-role-rpmfusion
+  - name: xiple.tailscale
+    src: https://github.com/xiple/ansible-role-tailscale
+  - name: xiple.vscode
+    src: https://github.com/xiple/ansible-role-vscode
