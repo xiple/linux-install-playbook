@@ -38,7 +38,7 @@
 - name: Gnome - Add keybindings to run 'gnome-terminal' - 'command' key
   community.general.dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command"
-    value: "'/usr/bin/ptyxis'"
+    value: "'/usr/bin/ptyxis --new-window'"
     state: present
 
 - name: Gnome - Add keybindings to run 'gnome-terminal' - 'name' key
