@@ -16,21 +16,27 @@
   roles:
     - role: xiple.rpmfusion
       tags: ['rpmfusion']
+
     - role: xiple.vscode
       tags: ['vscode']
+
     - role: xiple.tailscale
       tags: ['tailscale']
+
     - role: geerlingguy.dotfiles
       become: false
       tags: ['dotfiles']
+
     - role: geerlingguy.docker
       tags: ['docker']
 
   tasks:
     - import_tasks: tasks/main.yml
       tags: ['main']
+
     - import_tasks: tasks/gnome.yml
       become: false
       tags: ['gnome']
+
     - import_tasks: tasks/virtualization.yml
       tags: ['virt']

@@ -28,3 +28,27 @@
     key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
     value: "['<Shift><Alt>Tab']"
     state: present
+
+- name: Gnome - Add keybindings to run 'gnome-terminal' - 'binding' key
+  community.general.dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding"
+    value: "'<Control><Alt>t'"
+    state: present
+
+- name: Gnome - Add keybindings to run 'gnome-terminal' - 'command' key
+  community.general.dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command"
+    value: "'/usr/bin/gnome-terminal'"
+    state: present
+
+- name: Gnome - Add keybindings to run 'gnome-terminal' - 'name' key
+  community.general.dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name"
+    value: "'Terminal'"
+    state: present
+
+- name: Gnome - Add keybindings to run 'gnome-terminal' - 'custom-keybindings' key
+  community.general.dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
+    value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+    state: present
