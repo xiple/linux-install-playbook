@@ -16,6 +16,7 @@ desktop_packages:
   - sysstat
   - fastfetch
   - vlc
+  - thunderbird
 
 desktop_packages_state: present
 
