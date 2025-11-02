@@ -14,3 +14,11 @@
   ansible.builtin.package:
     name: "{{ dconf_requirements_packages }}"
     state: "{{ dconf_requirements_packages_state }}"
+
+- name: Ensure {{ work_dir }} is created
+  ansible.builtin.file:
+    path: "{{ work_dir }}"
+    state: directory
+    mode: "0755"
+    owner: "{{ linux_user }}"
+    group: "{{ linux_user }}"

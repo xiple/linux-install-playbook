@@ -61,3 +61,5 @@ dotfiles_files:
   - .gitignore
   - .inputrc
   - .vimrc
+
+work_dir: "~{{ linux_user}}/work"
