@@ -3,7 +3,6 @@
   ansible.builtin.package:
     name: "{{ desktop_packages }}"
     state: "{{ desktop_packages_state }}"
-  ignore_errors: "{{ ansible_check_mode }}"
 
 - name: Install Dropbox (from RPM Fusion non free repo).
   ansible.builtin.package:
