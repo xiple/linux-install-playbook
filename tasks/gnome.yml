@@ -52,3 +52,9 @@
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings"
     value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
     state: present
+
+- name: Gnome - Remap 'Caps Lock' key to 'Escape' key
+  community.general.dconf:
+    key: "/org/gnome/desktop/input-sources/xkb-options"
+    value: "['caps:escape']"
+    state: present
