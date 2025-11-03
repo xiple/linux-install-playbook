@@ -21,6 +21,9 @@
     - role: xiple.tailscale
       tags: ['tailscale']
 
+    - role: xiple.nordvpn
+      tags: ['nordvpn']
+
     - role: geerlingguy.dotfiles
       become: false
       tags: ['dotfiles']

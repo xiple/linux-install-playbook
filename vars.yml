@@ -1,6 +1,7 @@
 ---
 linux_user: vagrant
 docker_users: "{{ linux_user }}"
+nordvpn_users: "{{ linux_user }}"
 
 desktop_packages:
   - curl
