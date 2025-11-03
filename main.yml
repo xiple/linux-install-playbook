@@ -5,12 +5,6 @@
   vars_files:
     - vars.yml
 
-  pre_tasks:
-    - name: Update package cache.
-      ansible.builtin.package:
-        update_cache: yes
-      tags: ['always']
-
   roles:
     - role: xiple.rpmfusion
       tags: ['rpmfusion']

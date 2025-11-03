@@ -3,6 +3,7 @@
   ansible.builtin.package:
     name: "{{ desktop_packages }}"
     state: "{{ desktop_packages_state }}"
+    update_cache: true
 
 - name: Install Dropbox (from RPM Fusion non free repo).
   ansible.builtin.package:
