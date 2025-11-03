@@ -3,15 +3,6 @@ Linux installation playbook
 
 This playbook install and configure most of the software I use on my Linux workstation.
 
-Requirements
-------------
-
-Install required roles
-
-```sh
-ansible-galaxy install -r requirements.yml
-```
-
 Playbook Variables
 --------------
 
@@ -40,6 +31,12 @@ python3 -V
 
 sudo dnf install python3-pip
 python3 -m pip -V
+```
+
+Install required roles
+
+```sh
+ansible-galaxy install -r requirements.yml
 ```
 
 Run the entire playbook
