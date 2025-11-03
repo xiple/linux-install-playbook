@@ -64,3 +64,5 @@ dotfiles_files:
   - .vimrc
 
 work_dir: "~{{ linux_user}}/work"
+
+bash_deprecated_functions_path: "/etc/bash_completion.d/000_bash_completion_compat.bash"

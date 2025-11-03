@@ -21,3 +21,9 @@
     mode: "0755"
     owner: "{{ linux_user }}"
     group: "{{ linux_user }}"
+
+# this file is known to generate "_comp_compgen: -C: invalid directory name" bash completion errors
+- name: Ensure deprecated bash completions functions are removed
+  ansible.builtin.file:
+    path: "{{ bash_deprecated_functions_path }}"
+    state: absent
