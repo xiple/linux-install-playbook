@@ -18,6 +18,7 @@ desktop_packages:
   - fastfetch
   - vlc
   - thunderbird
+  - calibre
 
 desktop_packages_state: present
 
