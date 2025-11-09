@@ -5,6 +5,14 @@
     state: "{{ desktop_packages_state }}"
     update_cache: true
 
+# ffmpeg-free provided by fedora repo does not contain all video codecs (h264)
+# see https://rpmfusion.org/Howto/Multimedia
+- name: Replace ffmpeg-free with RPM Fusion ffmpeg
+  ansible.builtin.dnf:
+    name: ffmpeg
+    state: present
+    allowerasing: true
+
 - name: Install Dropbox (from RPM Fusion non free repo).
   ansible.builtin.package:
     name: "{{ dropbox_packages }}"
