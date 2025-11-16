@@ -36,3 +36,8 @@
   ansible.builtin.file:
     path: "{{ bash_deprecated_functions_path }}"
     state: absent
+
+# for PS1 \h variable to be static
+- name: Set a static hostname
+  ansible.builtin.hostname:
+    name: "{{ desktop_hostname }}"

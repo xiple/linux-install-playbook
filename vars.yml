@@ -22,6 +22,8 @@ desktop_packages:
 
 desktop_packages_state: present
 
+desktop_hostname: fedora-laptop
+
 kvm_packages:
   - qemu-system
   - libvirt-clients
