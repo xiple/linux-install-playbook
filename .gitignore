@@ -2,3 +2,7 @@
 .vagrant/
 
 .ansible/
+
+# Ignore local Ansible roles and collections directory
+roles/
+collections/
