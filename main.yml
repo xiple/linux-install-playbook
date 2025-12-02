@@ -26,12 +26,15 @@
       tags: ['docker']
 
   tasks:
-    - import_tasks: tasks/main.yml
+    - name: Import main tasks
+      ansible.builtin.import_tasks: tasks/main.yml
       tags: ['main']
 
-    - import_tasks: tasks/gnome.yml
+    - name: Import Gnome tasks
+      ansible.builtin.import_tasks: tasks/gnome.yml
       become: false
       tags: ['gnome']
 
-    - import_tasks: tasks/virtualization.yml
+    - name: Import virtualization tasks
+      ansible.builtin.import_tasks: tasks/virtualization.yml
       tags: ['virt']

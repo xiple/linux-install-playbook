@@ -23,7 +23,7 @@
     name: "{{ dconf_requirements_packages }}"
     state: "{{ dconf_requirements_packages_state }}"
 
-- name: Ensure {{ work_dir }} is created
+- name: Ensure work directory is created
   ansible.builtin.file:
     path: "{{ work_dir }}"
     state: directory
