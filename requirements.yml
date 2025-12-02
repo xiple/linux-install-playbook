@@ -17,4 +17,3 @@ roles:
 
   - name: xiple.nordvpn
     src: https://github.com/xiple/ansible-role-nordvpn
-
