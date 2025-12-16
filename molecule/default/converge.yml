@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: molecule
+  gather_facts: true
+
+- name: Run main playbook
+  import_playbook: ../../main.yml
+  vars:
+    docker_service_manage: false
+    manage_static_hostname: false
