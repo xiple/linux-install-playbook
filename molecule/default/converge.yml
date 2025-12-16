@@ -7,4 +7,6 @@
   import_playbook: ../../main.yml
   vars:
     docker_service_manage: false
+    tailscale_service_manage: false
+    libvirt_service_manage: false
     manage_static_hostname: false

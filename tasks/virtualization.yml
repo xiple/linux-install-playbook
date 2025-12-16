@@ -13,6 +13,7 @@
   ansible.builtin.systemd_service:
     state: started
     name: libvirtd
+  when: libvirt_service_manage | default(true) | bool
 
 - name: Install vagrant.
   ansible.builtin.dnf:
