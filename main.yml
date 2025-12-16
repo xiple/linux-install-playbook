@@ -5,6 +5,13 @@
   vars_files:
     - vars.yml
 
+  pre_tasks:
+    - name: Ensure git is installed.
+      ansible.builtin.package:
+        name: git
+        state: present
+      tags: ['dotfiles']
+
   roles:
     - role: xiple.rpmfusion
       tags: ['rpmfusion']
