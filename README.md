@@ -70,4 +70,4 @@ MIT
 Notes
 ------------------
 
-Tested on Fedora 42
+Tested on Fedora 42, 43.
