@@ -1,6 +1,8 @@
 Linux installation playbook
 =========
 
+[![CI](https://github.com/xiple/linux-install-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/xiple/linux-install-playbook/actions/workflows/ci.yml)
+
 This playbook install and configure most of the software I use on my Linux workstation.
 
 Playbook Variables
