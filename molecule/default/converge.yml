@@ -6,7 +6,9 @@
 - name: Run main playbook
   import_playbook: ../../main.yml
   vars:
+    manage_static_hostname: false
+
+    # ignore systemd issues in container
     docker_service_manage: false
     tailscale_service_manage: false
     libvirt_service_manage: false
-    manage_static_hostname: false
