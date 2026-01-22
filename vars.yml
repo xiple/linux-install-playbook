@@ -65,6 +65,7 @@ dotfiles_files:
   - .gitignore
   - .inputrc
   - .vimrc
+  - .dir_colors
 
 work_dir: "~{{ linux_user}}/work"
 
