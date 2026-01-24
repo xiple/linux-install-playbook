@@ -58,3 +58,15 @@
     key: "/org/gnome/desktop/input-sources/xkb-options"
     value: "['caps:escape']"
     state: present
+
+- name: Ptyxis - Update 'move to next tab' keybinding
+  community.general.dconf:
+    key: "/org/gnome/Ptyxis/Shortcuts/move-next-tab"
+    value: "'<Control>k'"
+    state: present
+
+- name: Ptyxis - Update 'move to previous tab' keybinding
+  community.general.dconf:
+    key: "/org/gnome/Ptyxis/Shortcuts/move-previous-tab"
+    value: "'<Control>j'"
+    state: present
