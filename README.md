@@ -59,6 +59,7 @@ ansible-playbook -i inventory.ini \
   --ask-become-pass \
   --extra-vars "linux_user=fedora" \
   --tags gnome \
+  --skip-tags tlp \
   main.yml
 ```
 
