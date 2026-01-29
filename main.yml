@@ -22,6 +22,9 @@
     - role: xiple.tailscale
       tags: ['tailscale']
 
+    - role: xiple.tlp
+      tags: ['tlp']
+
 #    - role: xiple.nordvpn
 #      tags: ['nordvpn']
 
