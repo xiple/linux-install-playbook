@@ -10,45 +10,60 @@
       ansible.builtin.package:
         name: git
         state: present
-      tags: ['dotfiles']
+      tags:
+        - dotfiles
 
   roles:
     - role: xiple.rpmfusion
-      tags: ['rpmfusion']
+      tags:
+        - rpmfusion
 
     - role: xiple.vscode
-      tags: ['vscode']
+      tags:
+        - vscode
 
     - role: xiple.tailscale
-      tags: ['tailscale']
+      tags:
+        - tailscale
 
     - role: xiple.tlp
-      tags: ['tlp']
+      tags:
+        - tlp
 
     - role: xiple.veracrypt
-      tags: ['veracrypt']
+      tags:
+        - veracrypt
 
-#    to prevent conflicts, install one of tailscale or nordvpn
-#    - role: xiple.nordvpn
-#      tags: ['nordvpn']
+    # To prevent conflicts, install only one of:
+    #   - tailscale
+    #   - nordvpn
+    #
+    # - role: xiple.nordvpn
+    #   tags:
+    #     - nordvpn
 
     - role: geerlingguy.dotfiles
       become: false
-      tags: ['dotfiles']
+      tags:
+        - dotfiles
 
     - role: geerlingguy.docker
-      tags: ['docker']
+      tags:
+        - docker
 
   tasks:
     - name: Import main tasks
       ansible.builtin.import_tasks: tasks/main.yml
-      tags: ['main']
+      tags:
+        - main
 
     - name: Import Gnome tasks
       ansible.builtin.import_tasks: tasks/gnome.yml
       become: false
-      tags: ['gnome']
+      tags:
+        - gnome
 
     - name: Import virtualization tasks
       ansible.builtin.import_tasks: tasks/virtualization.yml
-      tags: ['virt']
+      tags:
+        - virt
