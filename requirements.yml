@@ -20,3 +20,6 @@ roles:
 
   - name: xiple.tlp
     src: https://github.com/xiple/ansible-role-tlp
+
+  - name: xiple.veracrypt
+    src: https://github.com/xiple/ansible-role-veracrypt

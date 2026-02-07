@@ -25,6 +25,10 @@
     - role: xiple.tlp
       tags: ['tlp']
 
+    - role: xiple.veracrypt
+      tags: ['veracrypt']
+
+#    to prevent conflicts, install one of tailscale or nordvpn
 #    - role: xiple.nordvpn
 #      tags: ['nordvpn']
 
