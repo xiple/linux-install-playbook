@@ -70,3 +70,6 @@ dotfiles_files:
 work_dir: "~{{ linux_user}}/work"
 
 bash_deprecated_functions_path: "/etc/bash_completion.d/000_bash_completion_compat.bash"
+
+data_partition_label: DATA
+data_partition_mountpoint: /data

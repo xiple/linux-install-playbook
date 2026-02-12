@@ -1,0 +1,17 @@
+---
+
+- name: Check if DATA partition exists using LABEL
+  ansible.builtin.stat:
+    path: "/dev/disk/by-label/{{ data_partition_label }}"
+    follow: true
+  register: label_stat
+
+- name: Ensure mount directory for data partition exists
+  ansible.builtin.file:
+    path: "{{ data_partition_mountpoint }}"
+    state: directory
+    mode: '0755'
+    owner: "{{ linux_user }}"
+    group: "{{ linux_user }}"
+  when: label_stat.stat.exists
+

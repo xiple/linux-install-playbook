@@ -57,6 +57,11 @@
       tags:
         - main
 
+    - name: Import storage tasks
+      ansible.builtin.import_tasks: tasks/storage.yml
+      tags:
+        - storage
+
     - name: Import Gnome tasks
       ansible.builtin.import_tasks: tasks/gnome.yml
       become: false
