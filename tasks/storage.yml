@@ -15,3 +15,13 @@
     group: "{{ linux_user }}"
   when: label_stat.stat.exists
 
+# Add the below line to fstab, then mount
+# LABEL=DATA /data ext4 defaults,nofail 0 0
+- name: Mount up data partition by label
+  ansible.posix.mount:
+    path: "{{ data_partition_mountpoint }}"
+    src: "LABEL={{ data_partition_label }}"
+    fstype: ext4
+    opts: defaults,nofail
+    state: mounted
+  when: label_stat.stat.exists
