@@ -52,15 +52,15 @@
         - docker
 
   tasks:
-    - name: Import main tasks
-      ansible.builtin.import_tasks: tasks/main.yml
-      tags:
-        - main
-
     - name: Import storage tasks
       ansible.builtin.import_tasks: tasks/storage.yml
       tags:
         - storage
+
+    - name: Import main tasks
+      ansible.builtin.import_tasks: tasks/main.yml
+      tags:
+        - main
 
     - name: Import Gnome tasks
       ansible.builtin.import_tasks: tasks/gnome.yml
