@@ -42,6 +42,12 @@
     #   tags:
     #     - nordvpn
 
+    # For 'root' user
+    - role: geerlingguy.dotfiles
+      tags:
+        - dotfiles
+
+    # For 'linux_user'
     - role: geerlingguy.dotfiles
       become: false
       tags:
