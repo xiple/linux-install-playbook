@@ -70,3 +70,9 @@
     key: "/org/gnome/Ptyxis/Shortcuts/move-previous-tab"
     value: "'<Control>j'"
     state: present
+
+- name: Ptyxis - Update interface style to dark
+  community.general.dconf:
+    key: "/org/gnome/Ptyxis/interface-style"
+    value: "'dark'"
+    state: present
