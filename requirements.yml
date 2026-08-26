@@ -15,9 +15,6 @@ roles:
   - name: xiple.vscode
     src: https://github.com/xiple/ansible-role-vscode
 
-  - name: xiple.nordvpn
-    src: https://github.com/xiple/ansible-role-nordvpn
-
   - name: xiple.tlp
     src: https://github.com/xiple/ansible-role-tlp
 

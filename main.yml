@@ -34,14 +34,6 @@
       tags:
         - veracrypt
 
-    # To prevent conflicts, install only one of:
-    #   - tailscale
-    #   - nordvpn
-    #
-    # - role: xiple.nordvpn
-    #   tags:
-    #     - nordvpn
-
     # For 'root' user
     - role: geerlingguy.dotfiles
       tags:
