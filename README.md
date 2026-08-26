@@ -3,7 +3,7 @@ Linux installation playbook
 
 [![CI](https://github.com/xiple/linux-install-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/xiple/linux-install-playbook/actions/workflows/ci.yml)
 
-This playbook install and configure most of the software I use on my Linux workstation :
+This playbook configures most of the software I use on my Linux workstation :
 
 - *[RPM fusion](https://rpmfusion.org/)* repositories using [xiple.rpmfusion](https://github.com/xiple/ansible-role-rpmfusion) role,
 - *[Visual Studio Code](https://code.visualstudio.com/)* using [xiple.vscode](https://github.com/xiple/ansible-role-vscode) role,
