@@ -21,7 +21,7 @@ desktop_packages:
 
 desktop_packages_state: present
 
-desktop_hostname: fedora-laptop
+desktop_hostname: workstation-01
 
 kvm_packages:
   - qemu-system
