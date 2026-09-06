@@ -22,6 +22,7 @@ Playbook Variables
 
 ```yaml
 linux_user: vagrant
+desktop_hostname: workstation-01
 ```
 
 The desktop user running the playbook.
@@ -70,6 +71,7 @@ To run a specific part of the playbook
 ansible-playbook -i inventory.ini \
   --ask-become-pass \
   --extra-vars "linux_user=fedora" \
+  --extra-vars "desktop_hostname=workstation-01" \
   --tags gnome \
   --skip-tags tlp \
   main.yml
