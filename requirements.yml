@@ -3,8 +3,8 @@ roles:
   - name: geerlingguy.docker
     version: 7.8.0
 
-  - name: geerlingguy.dotfiles
-    version: 1.3.2
+  - name: xiple.dotfiles
+    src: https://github.com/xiple/ansible-role-dotfiles
 
   - name: xiple.rpmfusion
     src: https://github.com/xiple/ansible-role-rpmfusion
