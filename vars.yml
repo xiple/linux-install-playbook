@@ -72,3 +72,5 @@ bash_deprecated_functions_path: "/etc/bash_completion.d/000_bash_completion_comp
 
 data_partition_label: DATA
 data_partition_mountpoint: /data
+
+dnf_conf_path: "/etc/dnf/dnf.conf"
