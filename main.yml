@@ -64,6 +64,14 @@
       tags:
         - virt
 
+  handlers:
+    - name: Restart NetworkManager
+      ansible.builtin.systemd:
+        name: NetworkManager
+        state: restarted
+
+
+
 - name: Configure linux desktop host (no root)
   hosts: all
   become: false

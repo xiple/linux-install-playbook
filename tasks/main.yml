@@ -41,3 +41,10 @@
     src: dnf.conf
     dest: "{{ dnf_conf_path }}"
     mode: '0644'
+
+- name: Install custom NetworkManager drop-in for mac randomization
+  ansible.builtin.copy:
+    src: 00-macrandomize.conf
+    dest: "{{ networkmanager_mac_random_dropin_path }}"
+    mode: '0644'
+  notify: Restart NetworkManager

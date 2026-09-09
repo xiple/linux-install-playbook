@@ -74,3 +74,5 @@ data_partition_label: DATA
 data_partition_mountpoint: /data
 
 dnf_conf_path: "/etc/dnf/dnf.conf"
+
+networkmanager_mac_random_dropin_path: "/etc/NetworkManager/conf.d/00-macrandomize.conf"
