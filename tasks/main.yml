@@ -18,11 +18,6 @@
     name: "{{ dropbox_packages }}"
     state: "{{ dropbox_packages_state }}"
 
-- name: Install requirements for ansible dconf module.
-  ansible.builtin.package:
-    name: "{{ dconf_requirements_packages }}"
-    state: "{{ dconf_requirements_packages_state }}"
-
 # this file is known to generate "_comp_compgen: -C: invalid directory name" bash completion errors
 - name: Ensure deprecated bash completions functions are removed
   ansible.builtin.file:
