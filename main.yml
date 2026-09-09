@@ -59,6 +59,11 @@
       tags:
         - gnome
 
+    - name: Import privacy tasks
+      ansible.builtin.import_tasks: tasks/privacy.yml
+      tags:
+        - privacy
+
     - name: Import virtualization tasks
       ansible.builtin.import_tasks: tasks/virtualization.yml
       tags:
