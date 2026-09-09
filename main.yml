@@ -70,8 +70,6 @@
         name: NetworkManager
         state: restarted
 
-
-
 - name: Configure linux desktop host (no root)
   hosts: all
   become: false
