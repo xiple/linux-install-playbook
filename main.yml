@@ -74,6 +74,7 @@
       ansible.builtin.systemd:
         name: NetworkManager
         state: restarted
+      when: networkmanager_service_manage | bool
 
 - name: Configure linux desktop host (no root)
   hosts: all

@@ -12,3 +12,4 @@
     docker_service_manage: false
     tailscale_service_manage: false
     libvirt_service_manage: false
+    networkmanager_service_manage: false
