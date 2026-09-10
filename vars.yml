@@ -76,4 +76,4 @@ data_partition_mountpoint: /data
 dnf_conf_path: "/etc/dnf/dnf.conf"
 
 networkmanager_mac_random_dropin_path: "/etc/NetworkManager/conf.d/00-macrandomize.conf"
-networkmanager_service_manage: true
+networkmanager_service_manage: "{{ networkmanager_service_manage | default(true) }}"
