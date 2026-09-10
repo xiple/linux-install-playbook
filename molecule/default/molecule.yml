@@ -8,6 +8,7 @@ ansible:
     args:
       ansible_playbook:
         - --inventory=inventory/
+        - --extra-vars=networkmanager_service_manage=false
 
 dependency:
   name: galaxy
