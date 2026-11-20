@@ -84,12 +84,12 @@
 
 - name: Gnome - Switch app in current workspace only
   community.general.dconf:
-    key: "org/gnome/shell/app-switcher/current-workspace-only"
+    key: "/org/gnome/shell/app-switcher/current-workspace-only"
     value: "true"
     state: present
 
 - name: Gnome - Switch window in current workspace only
   community.general.dconf:
-    key: "org/gnome/shell/window-switcher/current-workspace-only"
+    key: "/org/gnome/shell/window-switcher/current-workspace-only"
     value: "true"
     state: present
