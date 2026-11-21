@@ -49,8 +49,10 @@ jobs:
           python-version: '3.13'
 
       - name: Install test dependencies.
-        run: |
-          pip3 install ansible molecule
+        run: pip3 install ansible molecule
+
+      - name: Install required roles.
+        run: ansible-galaxy install -r requirements.yml
 
       - name: Run Molecule tests.
         run: molecule test
