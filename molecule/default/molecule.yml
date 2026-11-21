@@ -1,5 +1,8 @@
 ---
-# use Pre Ansible-Native Configuration
+# do not automatically install roles from project level 'requirements.yml'
+# prevent conflicts between updated roles and created copies in ~/.ansible/roles
+prerun: false
+
 ansible:
   cfg:
     defaults:
